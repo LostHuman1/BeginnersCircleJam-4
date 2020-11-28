@@ -262,7 +262,7 @@ MonoBehaviour:
     m_Bits: 256
   counterMovement: 0.175
   maxSlopeAngle: 35
-  slideForce: 400
+  slideForce: 800
   slideCounterMovement: 0.2
   jumpForce: 550
 --- !u!54 &427033437
