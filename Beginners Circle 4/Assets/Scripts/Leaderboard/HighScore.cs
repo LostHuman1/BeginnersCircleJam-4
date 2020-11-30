@@ -5,31 +5,50 @@ using UnityEngine.Networking;
 
 public class HighScore : MonoBehaviour
 {
+    //Code for manage score
 	const string privateCode = "cwCNAGZIjUyL9nvU1oMmhwMtmj-pcVlU6mKPYnApOCCA";
 	const string publicCode = "5fc33615eb36fd27140bd60e";
+    //Scoreboard webURL
 	const string webURL = "http://dreamlo.com/lb/";
-
+    //Highscore data array
 	public Highscore[] highscoresList;
-
+    static HighScore instance;
+    //
+    DisplayHighscore displayHighscore;
 	private void Awake()
-	{
-		AddNewHighscore("Kan", 50);
-		AddNewHighscore("Katy", 40);
-		AddNewHighscore("Kain", 30);
-		DownloadHighscore();
+    {
+        instance = this;
+        displayHighscore = GetComponent<DisplayHighscore>();
 	}
-	public void AddNewHighscore(string username, int score)
+    /// <summary>
+    /// Add new score
+    /// </summary>
+    /// <param name="username">User's name</param>
+    /// <param name="score">User's score</param>
+	public static void AddNewHighscore(string username, int score)
 	{
-		StartCoroutine(UploadHighScore(username, score));
+		instance.StartCoroutine(instance.UploadHighScore(username, score));
 	}
+    /// <summary>
+    /// Add username and score to database
+    /// </summary>
+    /// <param name="username">name of the user</param>
+    /// <param name="score">user's score</param>
+    /// <returns></returns>
 	IEnumerator UploadHighScore(string username, int score)
 	{
 		UnityWebRequest www = new UnityWebRequest(webURL + privateCode + "/add/" + UnityWebRequest.EscapeURL(username) + "/" + score);
 		yield return www.SendWebRequest();
-		if (string.IsNullOrEmpty(www.error))
-			print("Upload Successful");
+        
+        if (string.IsNullOrEmpty(www.error))
+        { 
+            print("Upload Successful");
+            DownloadHighscore();
+        }
 		else
-			print("Upload Error" + www.error);
+        {
+            print("Upload Error" + www.error);
+        }
 	}
 	public void DownloadHighscore()
 	{
@@ -40,10 +59,15 @@ public class HighScore : MonoBehaviour
 		UnityWebRequest www = new UnityWebRequest(webURL + privateCode + "/pipe/");
 		www.downloadHandler = new DownloadHandlerBuffer();
 		yield return www.SendWebRequest();
-		if (string.IsNullOrEmpty(www.error))
-			FormatHighscore(www.downloadHandler.text);
-		else
-			print("Upload Error" + www.error);
+        if (string.IsNullOrEmpty(www.error))
+        {
+            FormatHighscore(www.downloadHandler.text);
+            displayHighscore.OnHighscoresDownloaded(highscoresList);
+        }
+        else
+        {
+            print("Upload Error" + www.error);
+        }
 	}
 	void FormatHighscore(string textStream)
 	{
@@ -55,8 +79,10 @@ public class HighScore : MonoBehaviour
 			string username = entryInfo[0];
 			int score = int.Parse(entryInfo[1]);
 			highscoresList[i] = new Highscore(username, score);
-			print(highscoresList[i].username + ":" + highscoresList[i].score);
-		}
+#if UNITY_EDITOR
+            print(highscoresList[i].username + ":" + highscoresList[i].score);
+#endif
+        }
 	}
 }
 public struct Highscore
