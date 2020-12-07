@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1221401196025764909}
   - component: {fileID: 1221401196025764910}
   - component: {fileID: 1221401196025764911}
+  - component: {fileID: 1565649928}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -142,6 +143,22 @@ MonoBehaviour:
   slideForce: 800
   slideCounterMovement: 0.2
   jumpForce: 550
+--- !u!114 &1565649928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1221401196025764904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3edf97aa3b1ee64ba77454e126dadde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wallRunUpForce: 7
+  wallRunPushForce: 7
+  cam: {fileID: 1221401197442743180}
+  head: {fileID: 1221401197293282577}
 --- !u!1 &1221401196034872454
 GameObject:
   m_ObjectHideFlags: 0
