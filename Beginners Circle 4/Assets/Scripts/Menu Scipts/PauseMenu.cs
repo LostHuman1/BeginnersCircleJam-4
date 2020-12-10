@@ -13,7 +13,7 @@ public class PauseMenu : MonoBehaviour
     public static bool IsGamePause = false;
     private void Awake()
     {
-        volumeSlider.value = MainMenu.Volume;
+        volumeSlider.value = MainMenu.BGMVolume;
         sensitivitySlider.value = MainMenu.MouseSensitivity;
     }
     // Update is called once per frame
@@ -48,9 +48,13 @@ public class PauseMenu : MonoBehaviour
         Cursor.visible = true;
         IsGamePause = true;
     }
-    public void SetVolume(float volume)
+    public void SetBGMVolume(float volume)
     {
-        audioMixer.SetFloat("BGVolume", Mathf.Log10(volume) * 20);
+        audioMixer.SetFloat("BGMVolume", Mathf.Log10(volume) * 20);
+    }
+    public void SetSEVolume(float volume)
+    {
+        audioMixer.SetFloat("SEVolume", Mathf.Log10(volume) * 20);
     }
     public void SetMouseSensitivity(float sensitivity)
     {
