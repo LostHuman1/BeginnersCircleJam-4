@@ -5,22 +5,20 @@ using UnityEngine;
 public class GameMaster : MonoBehaviour
 {
     public static GameMaster instance;
-    public Vector3 lastCheckPoint;
+    public Vector3 respawnPoint;
+    public bool isRespawning = false;
 
     [SerializeField] private GameData gameData;
     private int levelNum = 0;
-    void Awake()
+
+    private void Update()
     {
-        if (instance == null)
+        if (transform.position.y < -70)
         {
-            instance = this;
-            DontDestroyOnLoad(instance);
-        }
-        else
-        {
-            Destroy(gameObject);    
+            Respawn();
         }
     }
+
     void UpdateScore()
     {
         if (gameData.maxScore[levelNum] <= 0) return;
@@ -29,5 +27,15 @@ public class GameMaster : MonoBehaviour
     public float GetTime()
     {
         return gameData.maxTime[levelNum];
+    }
+
+    public void Respawn()
+    {
+        this.transform.position = respawnPoint;
+    }
+
+    public void SetSpawnPoint(Vector3 newPosition)
+    {
+        respawnPoint = newPosition;
     }
 }
