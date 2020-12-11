@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e2ab22bd7208e24eb3febd77305a4ff, type: 3}
   m_Name: Game Data
   m_EditorClassIdentifier: 
-  maxTime: []
-  maxScore: []
+  maxTime:
+  - 180
+  maxScore:
+  - 100
