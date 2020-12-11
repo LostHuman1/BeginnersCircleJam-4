@@ -24,6 +24,8 @@ public class GameMaster : MonoBehaviour
         if (transform.position.y < -70)
         {
             Respawn();
+
+            
         }
         UpdateScore();
         if(isEndGame)
@@ -51,6 +53,7 @@ public class GameMaster : MonoBehaviour
     public void Respawn()
     {
         this.transform.position = respawnPoint;
+        FindObjectOfType<AudioManager>().Play("PlayerDeath");
     }
 
     public void SetSpawnPoint(Vector3 newPosition)

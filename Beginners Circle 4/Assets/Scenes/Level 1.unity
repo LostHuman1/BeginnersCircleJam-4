@@ -10671,10 +10671,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: Ded
+  - name: PlayerDeath
     clip: {fileID: 8300000, guid: a80e720f4dc44844cb18813b747a0029, type: 3}
-    volume: 0
+    volume: 1
     pitch: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Theme
+    clip: {fileID: 8300000, guid: b18c8299dd614f247bd1fbf92de92290, type: 3}
+    volume: 1
+    pitch: 0
+    loop: 1
     source: {fileID: 0}
 --- !u!1001 &878259992
 PrefabInstance:
