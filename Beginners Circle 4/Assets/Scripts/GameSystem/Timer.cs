@@ -17,7 +17,10 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        maxTime -= Time.deltaTime;
+        if (!GameMaster.instance.isEndGame)
+        {
+            maxTime -= Time.deltaTime;
+        }
         DisplayTime(maxTime);
     }
     void DisplayTime(float time)

@@ -7,6 +7,7 @@ public class GameMaster : MonoBehaviour
     public static GameMaster instance;
     public Vector3 respawnPoint;
     public bool isRespawning = false;
+    public bool isEndGame = false;
 
     [SerializeField] private GameData gameData;
     private int levelNum = 0;
@@ -23,6 +24,12 @@ public class GameMaster : MonoBehaviour
         if (transform.position.y < -70)
         {
             Respawn();
+        }
+        UpdateScore();
+        if(isEndGame)
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
     }
 

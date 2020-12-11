@@ -252,6 +252,14 @@ public class PlayerController : MonoBehaviour
             Invoke(nameof(StopGrounded), Time.deltaTime * delay);
         }
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("LastCheckPoint"))
+        {
+            SceneManager.LoadScene("End Scene");
+            GameMaster.instance.isEndGame = true;
+        }
+    }
 
     private void StopGrounded()
     {

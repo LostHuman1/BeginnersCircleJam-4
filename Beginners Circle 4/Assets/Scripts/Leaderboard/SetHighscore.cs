@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class SetHighscore : MonoBehaviour
 {
@@ -20,5 +21,9 @@ public class SetHighscore : MonoBehaviour
     public void ClearText()
     {
         usernameInput.text = "";
+    }
+    public void LoadMenu()
+    {
+        SceneManager.LoadScene("Main Menu");
     }
 }

@@ -8,6 +8,7 @@ TagManager:
   - GM
   - Death Floor
   - Checkpoint
+  - LastCheckPoint
   layers:
   - Default
   - TransparentFX
