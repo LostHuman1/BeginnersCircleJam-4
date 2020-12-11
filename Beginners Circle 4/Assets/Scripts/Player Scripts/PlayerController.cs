@@ -65,10 +65,6 @@ public class PlayerController : MonoBehaviour
     {
         MyInput();
         Look();
-        if(Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            transform.position = new Vector3(-191.22f, 13.98f, -392.88f);
-        }
     }
 
     private void MyInput()
