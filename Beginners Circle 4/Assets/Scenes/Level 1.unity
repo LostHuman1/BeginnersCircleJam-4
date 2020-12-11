@@ -10671,7 +10671,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: 
+  - name: Ded
     clip: {fileID: 8300000, guid: a80e720f4dc44844cb18813b747a0029, type: 3}
     volume: 0
     pitch: 0
