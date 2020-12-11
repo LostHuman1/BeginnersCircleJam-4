@@ -44,7 +44,7 @@ public class PauseMenu : MonoBehaviour
         Cursor.visible = false;
         IsGamePause = false;
         if (!MenuPanel.activeSelf) MenuPanel.SetActive(true);
-        OptionPanel.SetActive(false);
+        if (OptionPanel.activeSelf) OptionPanel.SetActive(false);
     }
     void Pause()
     {
