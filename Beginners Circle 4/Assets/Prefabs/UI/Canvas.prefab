@@ -301,7 +301,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7212866953702533802, guid: dcc3b58cf5a53b84b9976bdc7f363543, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7212866953702533802, guid: dcc3b58cf5a53b84b9976bdc7f363543, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -351,6 +351,34 @@ PrefabInstance:
       propertyPath: m_TargetGraphic
       value: 
       objectReference: {fileID: 2338151092124239055}
+    - target: {fileID: 7212866953702533802, guid: dcc3b58cf5a53b84b9976bdc7f363543, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 2097263277959629317}
+    - target: {fileID: 7212866953702533802, guid: dcc3b58cf5a53b84b9976bdc7f363543, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: PauseMenu, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7212866953702533802, guid: dcc3b58cf5a53b84b9976bdc7f363543, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: PlayButtonSFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 7212866953702533802, guid: dcc3b58cf5a53b84b9976bdc7f363543, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7212866953702533802, guid: dcc3b58cf5a53b84b9976bdc7f363543, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7212866953702533802, guid: dcc3b58cf5a53b84b9976bdc7f363543, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7212866953702533802, guid: dcc3b58cf5a53b84b9976bdc7f363543, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8032814537036383409, guid: dcc3b58cf5a53b84b9976bdc7f363543, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -358,6 +386,10 @@ PrefabInstance:
     - target: {fileID: 8032814537036383409, guid: dcc3b58cf5a53b84b9976bdc7f363543, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SetBGMVolume
+      objectReference: {fileID: 0}
+    - target: {fileID: 8032814537326248084, guid: dcc3b58cf5a53b84b9976bdc7f363543, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8032814537326248084, guid: dcc3b58cf5a53b84b9976bdc7f363543, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -371,6 +403,30 @@ PrefabInstance:
       propertyPath: m_TargetGraphic
       value: 
       objectReference: {fileID: 8241784774367581067}
+    - target: {fileID: 8032814537326248084, guid: dcc3b58cf5a53b84b9976bdc7f363543, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 2097263277959629317}
+    - target: {fileID: 8032814537326248084, guid: dcc3b58cf5a53b84b9976bdc7f363543, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: PauseMenu, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8032814537326248084, guid: dcc3b58cf5a53b84b9976bdc7f363543, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: PlayButtonSFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 8032814537326248084, guid: dcc3b58cf5a53b84b9976bdc7f363543, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8032814537326248084, guid: dcc3b58cf5a53b84b9976bdc7f363543, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8032814537326248084, guid: dcc3b58cf5a53b84b9976bdc7f363543, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8032814537326248085, guid: dcc3b58cf5a53b84b9976bdc7f363543, type: 3}
       propertyPath: m_AnchorMin.y
       value: 1
@@ -404,6 +460,10 @@ PrefabInstance:
       value: -339.47546
       objectReference: {fileID: 0}
     - target: {fileID: 8032814537970509203, guid: dcc3b58cf5a53b84b9976bdc7f363543, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8032814537970509203, guid: dcc3b58cf5a53b84b9976bdc7f363543, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2097263277959629317}
@@ -415,6 +475,30 @@ PrefabInstance:
       propertyPath: m_TargetGraphic
       value: 
       objectReference: {fileID: 8241784774760904334}
+    - target: {fileID: 8032814537970509203, guid: dcc3b58cf5a53b84b9976bdc7f363543, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 2097263277959629317}
+    - target: {fileID: 8032814537970509203, guid: dcc3b58cf5a53b84b9976bdc7f363543, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: PauseMenu, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8032814537970509203, guid: dcc3b58cf5a53b84b9976bdc7f363543, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: PlayButtonSFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 8032814537970509203, guid: dcc3b58cf5a53b84b9976bdc7f363543, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8032814537970509203, guid: dcc3b58cf5a53b84b9976bdc7f363543, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8032814537970509203, guid: dcc3b58cf5a53b84b9976bdc7f363543, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8032814538294067975, guid: dcc3b58cf5a53b84b9976bdc7f363543, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -425,7 +509,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8032814538317289610, guid: dcc3b58cf5a53b84b9976bdc7f363543, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8032814538317289610, guid: dcc3b58cf5a53b84b9976bdc7f363543, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -479,6 +563,30 @@ PrefabInstance:
       propertyPath: m_TargetGraphic
       value: 
       objectReference: {fileID: 8241784772808215449}
+    - target: {fileID: 8032814538317289610, guid: dcc3b58cf5a53b84b9976bdc7f363543, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 2097263277959629317}
+    - target: {fileID: 8032814538317289610, guid: dcc3b58cf5a53b84b9976bdc7f363543, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: PauseMenu, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8032814538317289610, guid: dcc3b58cf5a53b84b9976bdc7f363543, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: PlayButtonSFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 8032814538317289610, guid: dcc3b58cf5a53b84b9976bdc7f363543, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8032814538317289610, guid: dcc3b58cf5a53b84b9976bdc7f363543, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8032814538317289610, guid: dcc3b58cf5a53b84b9976bdc7f363543, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8032814538317289611, guid: dcc3b58cf5a53b84b9976bdc7f363543, type: 3}
       propertyPath: m_AnchorMin.y
       value: 1
@@ -604,6 +712,10 @@ PrefabInstance:
       value: -163.02066
       objectReference: {fileID: 0}
     - target: {fileID: 8032814538856762351, guid: dcc3b58cf5a53b84b9976bdc7f363543, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8032814538856762351, guid: dcc3b58cf5a53b84b9976bdc7f363543, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 8241784773050065234}
@@ -654,6 +766,30 @@ PrefabInstance:
     - target: {fileID: 8032814538856762351, guid: dcc3b58cf5a53b84b9976bdc7f363543, type: 3}
       propertyPath: m_Colors.m_NormalColor.b
       value: 0.20784314
+      objectReference: {fileID: 0}
+    - target: {fileID: 8032814538856762351, guid: dcc3b58cf5a53b84b9976bdc7f363543, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 2097263277959629317}
+    - target: {fileID: 8032814538856762351, guid: dcc3b58cf5a53b84b9976bdc7f363543, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: PauseMenu, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8032814538856762351, guid: dcc3b58cf5a53b84b9976bdc7f363543, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: PlayButtonSFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 8032814538856762351, guid: dcc3b58cf5a53b84b9976bdc7f363543, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8032814538856762351, guid: dcc3b58cf5a53b84b9976bdc7f363543, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8032814538856762351, guid: dcc3b58cf5a53b84b9976bdc7f363543, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dcc3b58cf5a53b84b9976bdc7f363543, type: 3}

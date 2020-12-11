@@ -74,4 +74,8 @@ public class PauseMenu : MonoBehaviour
     {
         Application.Quit();
     }
+    public void PlayButtonSFX()
+    {
+        SfxManager.sfxMusic.audioSource.PlayOneShot(SfxManager.sfxMusic.buttonPress);
+    }
 }

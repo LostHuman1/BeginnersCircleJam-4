@@ -254,13 +254,12 @@ public class PlayerController : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("LastCheckPoint"))
+        if (other.CompareTag("LastCheckPoint"))
         {
             SceneManager.LoadScene("End Scene");
             GameMaster.instance.isEndGame = true;
         }
     }
-
     private void StopGrounded()
     {
         grounded = false;
