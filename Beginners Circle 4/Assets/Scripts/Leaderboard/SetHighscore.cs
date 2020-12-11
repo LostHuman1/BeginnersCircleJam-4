@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class SetHighscore : MonoBehaviour
 {
-    [SerializeField] private InputField usernameInput;
+   [SerializeField] private InputField usernameInput;
     private string Name;
     /// <summary>
     /// Set username
@@ -12,7 +12,7 @@ public class SetHighscore : MonoBehaviour
     public void SetName()
     {
         Name = usernameInput.text;
-        //HighScore.AddNewHighscore(Name, Score);
+        HighScore.AddNewHighscore(Name,GameMaster.instance.GetScore());
     }
     /// <summary>
     /// Clear Inputfield

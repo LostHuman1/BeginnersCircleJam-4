@@ -7,13 +7,17 @@ using UnityEngine.Audio;
 public class PauseMenu : MonoBehaviour
 {
     [SerializeField] private GameObject PauseObj;
+    [SerializeField] private GameObject MenuPanel;
+    [SerializeField] private GameObject OptionPanel;
     [SerializeField] private AudioMixer audioMixer;
-    [SerializeField] private Slider volumeSlider;
+    [SerializeField] private Slider BGMVolumeSlider;
+    [SerializeField] private Slider SEVolumeSlider;
     [SerializeField] private Slider sensitivitySlider;
     public static bool IsGamePause = false;
     private void Awake()
     {
-        volumeSlider.value = MainMenu.BGMVolume;
+        BGMVolumeSlider.value = MainMenu.BGMVolume;
+        SEVolumeSlider.value = MainMenu.SEVolume;
         sensitivitySlider.value = MainMenu.MouseSensitivity;
     }
     // Update is called once per frame
@@ -39,6 +43,8 @@ public class PauseMenu : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         IsGamePause = false;
+        MenuPanel.SetActive(true);
+        OptionPanel.SetActive(false);
     }
     void Pause()
     {
